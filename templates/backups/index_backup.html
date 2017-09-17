@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+  <h3>Welcome!</h3>
+  <br>
+  <p>Laura and Nick would like to say, {{my_string}}</p>
+  <p>Visitors: {{my_list[3]}}</p>
+  <p>Loop through a list of numbers:</p>
+  <ul>
+    {% for n in my_list %}
+    <li>{{n}}</li>
+    {% endfor %}
+  </ul>
+  <h3> This is the end of my child template</h3>
+{% endblock %}

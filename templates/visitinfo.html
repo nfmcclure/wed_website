@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Laura and Nick - Visit Info</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600|Source+Code+Pro" rel="stylesheet" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js" type="text/javascript"></script><![endif]-->
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js">
+		{
+			prefix: 'css/style',
+			preloadStyleSheets: true,
+			resetCSS: true,
+			boxModel: 'border',
+			grid: { gutters: 30 },
+			breakpoints: {
+				wide: { range: '1200-', containers: 1140, grid: { gutters: 50 } },
+				narrow: { range: '481-1199', containers: 960 },
+				mobile: { range: '-480', containers: 'fluid', lockViewport: true, grid: { collapse: true } }
+			}
+		}
+		</script>
+		<script>
+			$(function() {
+
+				// Note: make sure you call dropotron on the top level <ul>
+				$('#main-nav > ul').dropotron({
+					offsetY: -10 // Nudge up submenus by 10px to account for padding
+				});
+
+			});
+		</script>
+		<script>
+			// DOM ready
+			$(function() {
+
+			// Create the dropdown base
+			$("<select />").appendTo("nav");
+
+			// Create default option "Go to..."
+			$("<option />", {
+				"selected": "selected",
+				"value"   : "",
+				"text"    : "Menu"
+			}).appendTo("nav select");
+
+			// Populate dropdown with menu items
+			$("nav a").each(function() {
+			var el = $(this);
+			$("<option />", {
+				"value"   : el.attr("href"),
+				"text"    : el.text()
+			}).appendTo("nav select");
+			});
+
+			// To make dropdown actually work
+			// To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+			$("nav select").change(function() {
+				window.location = $(this).find("option:selected").val();
+			});
+
+			});
+		</script>
+	</head>
+	<body>
+		<div id="header_container">
+		    <div class="container">
+			<!-- Header -->
+				<div id="header" class="row">
+
+					<nav id="main-nav" class="8u">
+						<ul>
+							<li><a href="{{ url_for('home') }}">Home</a></li>
+							<li><a href="{{ url_for('ourstory') }}">Our Story</a></li>
+							<li><a href="{{ url_for('accommodations') }}">Accommodations</a></li>
+							<li><a href="{{ url_for('rsvp') }}">RSVP</a></li>
+							<li><a class="active" href="{{ url_for('visitinfo') }}">Things to Do</a></li>
+                            <li><a href="{{ url_for('beers') }}">Nick's Brew</a></li>
+							<li><a href="{{ url_for('registry') }}">Registry</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="site_content">
+			<div class="container">
+
+		    <div class="container">
+                <div class="12u">
+					<div id="banner">
+				        <img src="images/sunset_goat_palette.jpg" alt="banner image" style="width: 50%; height: 50%" align="middle" />
+                    </div>
+                </div>
+			</div>
+
+			<!-- Features -->
+				<div class="row">
+
+					<section class="12u">
+						<p>We will be arriving in Montana about a week before the wedding to visit some of our favorite destinations, which will likely include an excursion to Glacier National Park. We will be keeping the Twitter account <a target="_blank" href="https://twitter.com/Laura_and_Nick"> @Laura_and_Nick </a> updated with our plans and whereabouts. If you don't have a twitter account, you can view the page at <a target="_blank" href="https://twitter.com/Laura_and_Nick"> https://twitter.com/Laura_and_Nick </a>. </p>
+						<p> </p>
+						<p> </p>
+						<h1>Visiting Missoula: Attractions and Sites</h1>
+                        <p>We love Missoula and all the Montana places and nature that is there. We recommend extending your stay and seeing all the sights in Missoula and Western Montana.</p>
+						<p>We recommend visiting this website: <a target="_blank" href="http://destinationmissoula.org/">http://destinationmissoula.org/</a>  and downloading or requesting a paper copy of the free visitor’s guide. It beautifully details many of the things that we would try to explain, for helping plan your visit. Pay special attention to the section entitled “Beyond Missoula,” starting on page 62, which may give you a few reasons to extend your trip. You may also want to follow <a target="_blank" href="https://twitter.com/visitmissoula">@visitmissoula</a> on Twitter to start getting acclimated.</p>
+						<h2>Missoula Events</h2>
+						<p>You can check what’s going on in town via MissoulaEvents.net (<a target="_blank" href="http://www.missoulaevents.net/">http://www.missoulaevents.net/</a>) or by picking up a free copy of the Missoula Independent (<a target="_blank" href="https://missoulanews.bigskypress.com/">https://missoulanews.bigskypress.com/</a>) which is available all over town.</p>
+						<h2>Our Favorite Missoula Stops:</h2>
+							<ul>
+								<li>First Friday Art Walk: The Friday before our wedding, downtown Missoula will have a wine-tasting / art-walk from 5-8pm throughout various shops.</li>
+								<li><a target="_blank" href="http://www.missoulafarmersmarket.com/"> Saturday Downtown Farmers Markets: There are various craft and farmers markets along Higgins Ave.</a></li>
+								<li><a target="_blank" href="http://freestoneclimbing.com/">Freestone Climbing Gym (Bouldering)</a></li>
+                                <li><a target="_blank" href="https://www.facebook.com/tagliaredelicatessen/">Tagliare Delicatessen (Deli and Sandwiches)</a></li>
+                                <li><a target="_blank" href="http://www.thecatalystcafe.com/">The Catalyst Cafe (Coffee and Espresso)</a></li>
+                                <li><a target="_blank" href="http://caffedolce.com/">Cafe Dolce (And where we had our first date)</a></li>
+                                <li><a target="_blank" href="http://www.lepetitoutre.com/">Le Petit Outre (Bakery, Coffee, Espresso)</a></li>
+                                <li><a target="_blank" href="http://therhinomissoula.com/">The Rhinoceros – huge beer selection</a></li>
+								<li><a target="_blank" href="http://kettlehouse.com/">Kettle House Brewing</a></li>
+                                <li><a target="_blank" href="http://bigskybrew.com/">Big Sky Brewing Company</a></li>
+                                <li><a target="_blank" href="http://www.bayernbrewery.com/">Bayern Brewing (German Reinheitsgebot Brewery)</a></li>
+								<li><a target="_blank" href="http://www.bigdippericecream.com/">Big Dipper Ice Cream</a></li>
+								<li><a target="_blank" href="http://montgomerydistillery.com/">Montgomery Distillery</a></li>
+                                <li><a target="_blank" href="http://redbirdrestaurant.com/rbrwp/">The Red Bird – food and drinks</a></li>
+                                <li><a target="_blank" href="http://www.makeitmissoula.com/things-to-do/attractions/brennans-wave/">Watching the surfers at Brennan’s Wave</a></li>
+                                <li>Any hike – <a target="_blank" href="http://www.missoulian.com/app/hikebike/MS-mtrail.html">The M is traditional</a>, but there are many others</li>
+                                <li><a target="_blank" href="https://www.fs.usda.gov/recarea/lolo/recreation/recarea?recid=10273&actid=93">Blue Mountain Recreation Area</a> is beautiful, and has a killer disc golf course</li>
+							</ul>
+                        <p> </p>
+                        <p><a target="_blank" href="http://www.mountainline.com/">Mountain Line busses are now fare-free!</a></p>
+						<p><p><a href="{{ url_for('rsvp') }}">RSVP</a></p></p>
+					</section>
+
+				</div>
+		    </div>
+		</div>
+
+		<div class="footer-wrapper">
+			<div class="container">
+			<!-- Footer -->
+				<footer>
+					<p><a href="{{ url_for('home') }}">Home</a> | <a href="{{ url_for('ourstory') }}">Our Story</a> | <a href="{{ url_for('accommodations') }}">Accommodations</a> | <a href="{{ url_for('rsvp') }}">RSVP</a> | <a href="{{ url_for('visitinfo') }}">Things to Do</a> | <a href="{{ url_for('beers') }}">Nick's Brew</a> | <li><a href="{{ url_for('registry') }}">Registry</a> </li></p>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>

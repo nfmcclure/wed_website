@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Laura and Nick - Our Story</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600|Source+Code+Pro" rel="stylesheet" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js" type="text/javascript"></script><![endif]-->
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js">
+		{
+			prefix: 'css/style',
+			preloadStyleSheets: true,
+			resetCSS: true,
+			boxModel: 'border',
+			grid: { gutters: 30 },
+			breakpoints: {
+				wide: { range: '1200-', containers: 1140, grid: { gutters: 50 } },
+				narrow: { range: '481-1199', containers: 960 },
+				mobile: { range: '-480', containers: 'fluid', lockViewport: true, grid: { collapse: true } }
+			}
+		}
+		</script>
+		<script>
+			$(function() {
+
+				// Note: make sure you call dropotron on the top level <ul>
+				$('#main-nav > ul').dropotron({
+					offsetY: -10 // Nudge up submenus by 10px to account for padding
+				});
+
+			});
+		</script>
+		<script>
+			// DOM ready
+			$(function() {
+
+			// Create the dropdown base
+			$("<select />").appendTo("nav");
+
+			// Create default option "Go to..."
+			$("<option />", {
+				"selected": "selected",
+				"value"   : "",
+				"text"    : "Menu"
+			}).appendTo("nav select");
+
+			// Populate dropdown with menu items
+			$("nav a").each(function() {
+			var el = $(this);
+			$("<option />", {
+				"value"   : el.attr("href"),
+				"text"    : el.text()
+			}).appendTo("nav select");
+			});
+
+			// To make dropdown actually work
+			// To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+			$("nav select").change(function() {
+				window.location = $(this).find("option:selected").val();
+			});
+
+			});
+		</script>
+	</head>
+	<body>
+		<div id="header_container">
+		    <div class="container">
+			<!-- Header -->
+				<div id="header" class="row">
+
+					<nav id="main-nav" class="8u">
+						<ul>
+							<li><a href="{{ url_for('home') }}">Home</a></li>
+							<li><a class="active" href="{{ url_for('ourstory') }}">Our Story</a></li>
+							<li><a href="{{ url_for('accommodations') }}">Accommodations</a></li>
+							<li><a href="{{ url_for('rsvp') }}">RSVP</a></li>
+							<li><a href="{{ url_for('visitinfo') }}">Things to Do</a></li>
+                            <li><a href="{{ url_for('beers') }}">Nick's Brew</a></li>
+							<li><a href="{{ url_for('registry') }}">Registry</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="site_content">
+			<div class="container">
+
+		    <div class="container" style="text-align: center">
+				<div class="12u" style="text-align: center">
+					<div id="wrapper-banner" style="text-align: center">
+						<!-- Banner -->
+						<div class="holder" id="banner" style="text-align: center">
+							<figure>
+								<a href="#"><img align="middle" src="images/pink_erasers.jpg" alt="banner image" /></a>
+								Part of the famous "Pink Erasers" kickball team in Missoula
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Features -->
+				<div class="row">
+
+					<section class="12u">
+						<h2>Our Story</h2>
+						<p>Graduate school is what brought us to Montana, but we met through the great institution of kickball. We each found our way to the Pink Erasers team of the great Missoula Le Kickball league, which formally requires “a positive ‘tude and a sweet outfit,” (see sample picture above) and we bonded during our first game by sharing a Young’s Double Chocolate Stout. Nick was floored that Laura knew what that was, and Laura was floored that Nick was willing to give one away. Neither of us were single at the time, and wouldn’t be single simultaneously for a few years, but we enjoyed lots of time together and formed a strong friendship. Spending time with the Pink Eraser crew on and off the field was an important stress relief from graduate school, and was an amazing social group. We saw each other at kickball, events around town, and the legendary homebrew parties thrown by Nick.</p>
+						<p>Nick had a crush on Laura from their very first meeting, but the timing wasn’t right so he figured it wasn’t going to happen. Laura was slowly falling for Nick over the years and took a while to realize it. Finally, in the winter of 2011, Nick was just out of a relationship and Laura was also single, but she was thinking about who could possibly be good enough for Nick. Then it dawned on her, and she told him how she felt. Nick was astounded and confessed that he like her since that first Young's Double Chocolate Stout. She famously came home afterward and told her roommate and friend Anayansi, “I got Nick!” And the rest, as they say, is history!</p>
+						<p>Missoula was where we spent all of our time as friends, and the first year of our relationship. We made it through two years of long-distance while Nick worked in Las Vegas.  After that, they moved to Seattle together when Laura got her Psychology internship there. Nick proposed at our apartment in Seattle over a home-made dinner that included bacon and Laura's favorite wine, and Laura enthusiastically accepted. We just bought our very first house, in Seattle, and are joyfully setting in.</p>
+						<p>Nick will be home-brewing beer specially for the reception. He will be keeping <a href="{{ url_for('beers') }}">this page</a> updated with his plans and progress.</p>
+                        <p style="text-align:center;font-size:30px"><a href="{{ url_for('rsvp') }}">RSVP</a></p>
+					</section>
+
+				</div>
+		    </div>
+		</div>
+
+		<div class="footer-wrapper">
+			<div class="container">
+			<!-- Footer -->
+				<footer>
+					<p><a href="{{ url_for('home') }}">Home</a> | <a href="{{ url_for('ourstory') }}">Our Story</a> | <a href="{{ url_for('accommodations') }}">Accommodations</a> | <a href="{{ url_for('rsvp') }}">RSVP</a> | <a href="{{ url_for('visitinfo') }}">Things to Do</a> | <a href="{{ url_for('beers') }}">Nick's Brew</a> | <li><a href="{{ url_for('registry') }}">Registry</a></li></p>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>
