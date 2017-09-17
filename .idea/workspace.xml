@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f15e079-41c1-4bf8-90f5-c898e87d15e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.env" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rsvp.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/runtime.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/style-mobile.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/style-narrow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/style-wide.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_formhelpers.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/accommodations.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/beers.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/ceremony.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/contact.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/documentation/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/layout.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/macros.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/ourstory.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/registry.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/rsvp.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/schedule.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/visitinfo.html" />
-    </list>
+    <list default="true" id="0f15e079-41c1-4bf8-90f5-c898e87d15e1" name="Default" comment="" />
     <ignored path="wedding_website.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -556,7 +530,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32590857" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32590857" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
