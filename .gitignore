@@ -34,7 +34,7 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
-
+.idea/workspace.xml
 <<<<<<< HEAD
 =======
 # PyInstaller
